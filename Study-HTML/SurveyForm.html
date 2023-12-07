@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles-form.css">
+</head>
+
+<body>
+    <h1 id='title'>freeCodeCamp Survey Form</h1>
+    <p id='description'>Thank you for taking the time to help us improve the platform</p>
+    <form id='survey-form' action="">
+        <label for="name" id='name-label'>Name
+            <input type="text" name="name" id="name" required placeholder='Enter your name.'>
+        </label>
+        <label for="email" id='email-label'>Email
+            <input type="email" name="email" id="email" required placeholder='Enter your Email'>
+        </label>
+        <label for="number" id='number-label'>Age(optional)
+            <input type="number" name="number" id="number" min='18' max='120' placeholder='Age'>
+        </label>
+        <fieldset>
+            <legend>What is your Gender</legend>
+            <select name="Gender" id="dropdown">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </fieldset>
+        <fieldse placeholder='Age' valvalue='' full-TimeJobt>
+            <legend>Job Type</legend>
+            <label for="full-time-job" class='inline-label'>
+                <input type="radio" name="name" id="full-time-job" value='fullTimeJob' checked> Full Time Job
+            </label>
+            <label for="part-time-job" class='inline-label'>
+                <input type="radio" name="name" id="part-time-job" value='partTimeJob'> Part Time Job
+            </label>
+            </fieldset>
+            <fieldset>
+                <legend>What would you like to see improved? (Check all that apply)</legend>
+
+                <label for="front-end-projects">
+                    <input type="checkbox" name='v1' id="front-end-projects" value='Front-end Projects'> Front-end projects
+                </label>
+                <label for="back-end-projects">
+                    <input type="checkbox" name='v2' id="back-end-projects" value='Back-end Projects'> Back-end Projects
+                </label>
+                <label for="data-visualization">
+                    <input type="checkbox" name='v3' id='data-visualization' value='Data Visualization'> Data Visualization
+                </label>
+            </fieldset>
+            <label for="comment">Any Comment or Suggestions</label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            <input type="submit" id="submit">
+    </form>
+</body>
+
+</html>
