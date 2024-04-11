@@ -1,0 +1,47 @@
+body {
+	display: flex;
+	flex-direction: row;
+}
+
+#navbar {
+	width: 20vw;
+	height: 100%;
+	position:fixed;
+}
+
+#main-doc {
+	width: 70vw;
+	margin-left:20vw;
+}
+
+.nav-link {
+	margin:0px;
+	padding:9px;
+	display: block;
+	text-decoration: none;
+	border:0px solid gray;
+}
+
+header {
+	font-size: xx-large;
+}
+
+
+code {
+	background-color: lightgray;
+	display: block;
+	padding: 0vw;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		flex-direction: column;
+	}
+	#navbar {
+		width: 100vw;
+	}
+	#main-doc {
+		width: 100vw;
+	}
+	
+}
