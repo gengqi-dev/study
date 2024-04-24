@@ -1,0 +1,164 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(240, 240, 240);
+}
+
+#header {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	padding: 20px;
+}
+
+#header-img {
+	width: 240px;
+}
+
+ul {
+	display: flex;
+	list-style-type: none;
+}
+
+li {
+	margin: 0 20px;
+}
+
+a {
+	font-family: 'Arial Narrow', Arial, sans-serif;
+	font-size: 2rem;
+	text-decoration: none;
+	color: black;
+}
+
+main {
+	margin-top: 6rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+}
+
+section {
+	margin: 20px 0;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+input[type="email"] {
+	height: 30px;
+	width: 280px;
+	margin: 10px 0;
+}
+
+input[type="submit"] {
+	height: 30px;
+	width: 100px;
+	background-color: orange;
+	border: none;
+	font-weight: bold;
+	transition: background-color 1s;
+}
+
+.features {
+	margin: 4rem 0;
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+}
+
+#features {
+	margin: 2rem 3rem;
+}
+
+h2 {
+	font-family: 'Arial Narrow', Arial, sans-serif;
+	font-size: 1.5rem;
+}
+
+i {
+	color: orange;
+}
+
+#pricing {
+	width: 100%;
+	margin: 2rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.pricing-box {
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 1rem;
+}
+
+.pricing-box>h2 {
+	font-size: 1.2rem;
+	width: 100%;
+	text-align: center;
+	padding: 1rem;
+	background-color: gainsboro;
+}
+
+.pricing-box>div {
+	place-items: center;
+}
+
+.pricing-box>div>h3 {
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+}
+
+.pricing-box>div>ol {
+	list-style: none;
+	text-align: center;
+}
+
+.pricing-box>div>ol>li {
+	margin: 1rem 0;
+}
+
+button {
+	background-color: yellowgreen;
+	padding: 0.5rem;
+	border: none;
+}
+
+@media only screen and (max-width:600px) {
+	#pricing {
+		width: 100%;
+		margin: 2rem;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	ul{
+		display: flex;
+		flex-direction: column;
+	}
+
+#header {
+	flex-direction: column;
+}
+main{
+	margin-top:12rem;
+}
+
+}
