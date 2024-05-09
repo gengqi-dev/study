@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+
+/* 
+Step 20:
+The animation-name property is used to link a @keyframes rule to a CSS selector. The value of this property should match the name of the @keyframes rule. Give your .wheel selector an animation-name property set to wheel.
+
+The animation-duration property is used to set how long the animation should sequence to complete. The time should be specified in either seconds (s) or milliseconds (ms). Set your .wheel selector to have an animation-duration property of 10s. */
+
+.wheel{
+    position: absolute;
+    border:2px solid black;
+    height:  36vw;
+    width:  36vw;
+    margin-left:10vw;
+    margin-top:5vh;
+    border-radius: 50%;
+    animation-name:wheel;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+.line{
+    position: absolute;
+    border:2px solid black;
+    height: 2px;
+    width:50%;
+    top:18vw;
+    left:18vw;
+    transform-origin: 0 0  ;
+}
+.line:nth-of-type(2){
+    transform: rotate(60deg);
+}
+
+.line:nth-of-type(3){
+    transform: rotate(120deg);
+}
+
+.line:nth-of-type(4){
+    transform: rotate(180deg);
+}
+
+
+.line:nth-of-type(5){
+    transform: rotate(240deg);
+}
+
+.line:nth-child(6){
+    transform: rotate(300deg);
+}
+
+.cabin{
+    background-color:red;
+    width:20%;
+    height:20%;
+    position:absolute;
+    border:2px solid ;
+    transform-origin:50% 0;
+}
+
+.cabin:nth-of-type(1){
+    right:-8.5%;
+    top:50%;
+}
+
+/* The second .cabin should have the right property set to 17% and the top property set to 93.5%. */
+.cabin:nth-of-type(2){
+    right:17%;
+    top:93.5%;
+}
+
+/* The third .cabin should have the right property set to 67% and the top property set to 93.5%. */
+.cabin:nth-of-type(3){
+    right:67%;
+    top:93.5%;
+}
+
+/* The fourth .cabin should have the left property set to -8.5% and the top property set to 50%. */
+.cabin:nth-of-type(4){
+    left:-8.5%;
+    top:50%;
+}
+
+
+/* The fifth .cabin should have the left property set to 17% and the top property set to 7%. */
+.cabin:nth-of-type(5){
+    left:17%;
+    top:7%;
+}
+
+
+/* The sixth .cabin should have the right property set to 17% and the top property set to 7%. */
+.cabin:nth-of-type(6){
+    right:17%;
+    top:7%;
+}
+
+
+
+@keyframes wheel{
+    /* The 0% keyframe should have the transform property set to rotate(0deg). */
+    0%{
+        transform: rotate(0deg);
+    }
+    /* The 100% keyframe should have the transform property set to rotate(360deg). */
+    100%{
+        transform: rotate(360deg);
+    }
+}
